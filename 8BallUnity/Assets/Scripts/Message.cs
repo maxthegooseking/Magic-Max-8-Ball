@@ -8,6 +8,7 @@ public class Message : MonoBehaviour
     public int fateMessage;
     public string messageToDisplay;
     public TextMeshProUGUI textUI;
+    public KeyCode Space;
 
     public string[] answers = new string[]
     {
@@ -23,21 +24,34 @@ public class Message : MonoBehaviour
         "Oh. No. Not in any universe." //neg
     };
 
-    public TMPro.TextMeshPro answerText;
+//public string answerText;
 
     public void GetRandomAnswer()
     {
         int randomIndex = Random.Range(0, answers.Length);
 
-        if (answerText != null)
+        if (textUI != null)
         {
-            answerText.text = answers[randomIndex];
+            textUI.text = answers[randomIndex];
         }
         else
         {
             Debug.LogWarning("Answer Text UI element not assigned!");
         }
     }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GetRandomAnswer();
+        }
+    }
+    private void FateMessageGenerate()
+    {
+        textUI.SetText(messageToDisplay);
+    }
+
+
 }
 
 
