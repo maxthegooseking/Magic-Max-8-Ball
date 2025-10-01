@@ -7,20 +7,20 @@ public class Message : MonoBehaviour
     public static Message Instance;
     public int fateMessage;
     public string messageToDisplay;
-    public TextMeshProUGUI
+    public TextMeshProUGUI textUI;
 
     public string[] answers = new string[]
     {
-        "For sure man.",
-        "LOL maybe.",
-        "I suppose.",
-        "I beg your finest pardon?",
-        "Yeah probably.",
-        "Definitely not.",
-        "Uhhh. Yes?",
-        "Oh yes, absolutely.",
-        "Fuck, man I don't know",
-        "Oh. No. Not in any universe."
+        "For sure man.", //pos
+        "LOL maybe.", //neg
+        "I suppose.", //pos
+        "I beg your finest pardon?", // neg
+        "Yeah probably.", //pos
+        "Definitely not.", //neg
+        "Uhhh. Yes?", //pos
+        "Oh yes, absolutely.", //pos
+        "Fuck, man I don't know", //neg
+        "Oh. No. Not in any universe." //neg
     };
 
     public TMPro.TextMeshPro answerText;
@@ -36,18 +36,6 @@ public class Message : MonoBehaviour
         else
         {
             Debug.LogWarning("Answer Text UI element not assigned!");
-        }
-
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
         }
     }
 }
