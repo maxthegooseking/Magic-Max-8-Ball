@@ -15,13 +15,13 @@ public class Message : MonoBehaviour
         "For sure man.", //pos
         "LOL maybe.", //neg
         "I suppose.", //pos
-        "I beg your finest pardon?", // neg
+        "I beg your pardon?", // neg
         "Yeah probably.", //pos
         "Definitely not.", //neg
         "Uhhh. Yes?", //pos
-        "Oh yes, absolutely.", //pos
-        "Fuck, man I don't know", //neg
-        "Oh. No. Not in any universe." //neg
+        "Oh, without a doubt.", //pos
+        "Fuck, I don't know", //neg
+        "No. Not in any universe." //neg
     };
 
 //public string answerText;
