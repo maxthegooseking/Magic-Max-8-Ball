@@ -773,7 +773,7 @@ MonoBehaviour:
   - Yeah probably.
   - Definitely not.
   - Uhhh. Yes?
-  - Oh, absolutely.
+  - Oh, without a doubt.
   - Fuck, I don't know
   - No. Not in any universe.
 --- !u!1 &1360711164
@@ -984,6 +984,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51241cea41f27064590bbf723a7e9bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Button
+  teleportableLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1559624443
 GameObject:
   m_ObjectHideFlags: 0
