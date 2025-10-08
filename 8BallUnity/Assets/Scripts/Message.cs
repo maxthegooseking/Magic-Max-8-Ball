@@ -13,15 +13,25 @@ public class Message : MonoBehaviour
     public string[] answers = new string[]
     {
         "For sure man.", //pos
-        "LOL maybe.", //neg
-        "I suppose.", //pos
-        "I beg your pardon?", // neg
-        "Yeah probably.", //pos
-        "Definitely not.", //neg
-        "Uhhh. Yes?", //pos
-        "Oh, without a doubt.", //pos
-        "Fuck, I don't know", //neg
-        "No. Not in any universe." //neg
+        "I suppose.",
+        "Yeah probably.",
+        "Uhhh. Yes?",
+        "Oh, without a doubt.",
+        "I think so.",
+        "Yes.",
+        "Mhm",
+        "Dude YES",
+
+        "I beg your pardon?", //neg
+        "LOL maybe.",
+        "Definitely not.",
+        "Fuck, I don't know",
+        "No. Not in any universe.",
+        "Not sure...",
+        "Nope!",
+        "HELL no.",
+        "Try again"
+
     };
 
 //public string answerText;
